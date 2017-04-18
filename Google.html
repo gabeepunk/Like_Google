@@ -17,10 +17,14 @@
         width: 24px;
         background-color: 757575;
         display: inline-block;
-        float:right;width:24px;height:24px;
+        float:right;
       }
 
-      #img{
+      #imgfoto{
+        width: 100%;
+      }
+
+      #imgcampana{
         margin: 5px 5px 10px 5px;
         height: 15px;
         width: 15px;
@@ -31,7 +35,9 @@
         border-radius: 100%;
         height: 42px;
         width: 42px;
-        background-color: 757575;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 100%;
         display: inline-block;
         float:right;
       }
@@ -168,6 +174,15 @@
        width: 40%;
        box-shadow: 0px 2px 8px #757575;
        border: 1px solid rgb(145, 145, 145);
+       font-family: roboto;
+       font-size: 14px;
+       color: black;
+       padding-left: 15px;
+     }
+
+     #floatinput{
+       display: block;
+       margin: -36px 0px 0px 827px;
      }
 
    </style>
@@ -181,27 +196,27 @@
       <a href="https://www.google.com.mx/imghp?hl=es-419&tab=wi&authuser=0&ei=pufzWMqgF4zHmwGUi7boCg&ved=0EKouCBEoAQ">
         <h2 class="headertext">Imágenes</h2>
       </a>
-      <section class="headertext" id="circulocampana">
-        <img id="img" src="img/bell.png">
-      </section>
-<section id="circulofoto">
-      <div>
-        <img id="img" src="img/perfil.jpg" style="width:50%">
-      </div>
+<section id="circulofoto" style="background-image: url(img/perfil.jpg)">
+  </section>
+  <section class="headertext" id="circulocampana">
+    <img id="imgcampana" src="img/bell.png">
   </section>
     </div>
   </nav>
 
-  <article class="article">
+<article class="article">
       <img id="logo" height="90px" src="https://www.google.com.mx/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="google logo">
         <p id="floatsection" class="h3">México</p>
+<form action="https://www.google.com/search">
    <section id="section">
-      <input id="inputtext" type="text">
+      <input id="inputtext" type="text" name="q"/>
+      <img id="floatinput" height="25px" src="img/microfono.png">
    </section>
    <section id="seccionbotones">
       <button class="boton" alt="Buscar en Google">Buscar en Google</button>
        <button class="boton" alt="Me siento con suerte">Me siento con suerte</button>
    </section>
+ </form>
 </article>
 
 <footer class="footer">
